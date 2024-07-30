@@ -18,7 +18,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
+app.use(cors({ credentials: true, origin: 'https://task-fe-zeta.vercel.app/' }));
 
 app.get('/', (req, res) => {
     res.send('Welcome to the Task Management API');
